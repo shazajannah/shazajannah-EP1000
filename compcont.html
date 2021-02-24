@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<title>EP1000 Digital Fabrication & Prototyping</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	</body>
+	<div id="container">
+		<div id="header">
+			<h1>Computer Controlled Cutting</h1>
+		</div>
+		<div id="content">
+			<div id="nav">
+				<h3>Navigation</h3>
+				<table>
+					<tr>
+						<td>
+				<ul>
+					<li><a href="index.html">Home</a><li>
+					<li><a href="aboutme.html=">About</a><li>
+					<li><a href="safety.html">Safety</a></li>
+					<li><a href="prototyping.html">Prototyping</a></li>
+					<li><a href="webdev.html">Web Development</a></li>
+					<li><a href="verscont.html">Version Control/My Site</a></li>
+					<li><a href="compaid.html">Computer Aided Design</a></li>
+					<li><a href="3dprint.html">3D Printing</a></li>
+					<li><a class="selected href">Computer Controlled Cutting</a></li>
+					<li><a href="solder.html">Soldering & Breadboard Prototyping</a></li>
+					<li><a href="embed.html">Embedded Programming</a></li>
+					<li><a href="final_project.html">Final Project</a></li>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<div id="main">
+			
+				<h2>AutoCAD and Librecad</h2>
+			</div>
+<br>
+<br>
+
+<table>
+<tr>
+<td colspan=3>
+	<p> For this part, we were tasked to create box with a lid using Autocad to design and generate the box and using Librecad to plan the laser cutting. To start it off, using Autocad, I created a new component for the bottom piece. For every part, there is a need to select create new component to ensure that all the parts are separate pieces that may be edited or altered later individually. After that, i set my dimension perimeters in the modify setting to ensure that in later future, should i change the thickness or dimensions of a part, the rest will be ratiod accordingly to prevent any missizing. When starting the next piece (front, back etc, always choose the surface on the previous piece to be sketched on. </p> 
+
+	<p>This ensures that the pieces are linked together and connects together. To show an example for sketching of the bottom piece, I always start with a rectangle, and then i create the tabs(the "fingers" that connect the pieces) with the thickness. I then created lines according to how many tabs i wanted. Usually i create the bottom and left part first, and to save time, i create a line in the middle of the rectangle, and mirror the dimensions to create the opposite side with the same dimensions. Then i remove any excess lines and sketch again as needed. The dimensions are as below for perimeters and also the sketch for the bottom piece:</p>
+
+<table>
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/size1.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/size2.jpg" width="300px" height="150px"> </td>
+
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/bttm1.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/bttm2.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/bttm3.jpg" width="300px" height="200px"> </td>
+</tr>
+
+
+</table>
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> I then proceed to create the front part as follows, using the bottom piece as my reference for the plane i want to sketch on. I did the sketch similarly as above and ended up with the below pictures. It is extruded at 3.6mm as per the thickness for all parts.</p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/front1.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/front2.jpg" width="300px" height="200px" > </td>
+</tr>
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> After this, i created the left piece with the same steps as the previous parts.</p> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/left.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/left2.jpg" width="300px" height="200px" > </td>
+</tr>
+
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> To save time from sketching the opposite sides (back and right), I constructed a midplane. A midplane is a plane that can be created manually by choosing 2 surfaces of previously made parts. For example, i created a midplane using the surface of the left piece and the surface of the bottom piece's surface (at the end of the tab). This midplane will be used to generate the right piece using the mirror function. I then created another midplane to create the back piece by using the front piece. </p> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/plane.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/plane2.jpg" width="300px" height="200px" > </td>
+</tr>
+
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> After creating the plane, i then proceeded to create the mirrorred component. I selected the component to mirror to the opposite side (Left to create Right and Front to create Back). The component for the opposite side should be generated then. As for the back part, I want it to not have the arc, so i'd have to select the Back component and create a new sketch on top of it. I created the sketch and then finished it. I deleted the body for Back and then extruded the newly created sketch to the given thickness.</p> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/back.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/back2.jpg" width="300px" height="200px" > </td>
+</tr>
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> The box without the lid should look like below. Now we just have to create the lid. The lid i wanted to make has 2 parts. One with the tabs and the other, just a flat piece. Create a new component for each part of the top, starting with the one with tabs, create a sketch as below and extrude it to the thickness after each sketch:</p> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/topp.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/topp4.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/mini.jpg" width="300px" height="200px" > </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/topp1.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/topp3.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/topp5.jpg" width="300px" height="200px" > </td>
+</tr>
+
+<tr>
+<td colspan=3><p> </p> </align> </td>
+</tr>
+
+
+
+<tr>
+<td colspan=3><p> The box is finally done! Now to bring it over to Librecad. We have to export each sketch as DXF, so there'll be 7 in total, as there's 7 pieces. Once exported, open librecad and import each dxf piece as a block. Once all the pieces are there, proceed to laser cut in the FabLab. The pieces are as below.</p> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/dxf.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/laser1.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/laser2.jpg" width="300px" height="200px" > </td>
+</tr>
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> And now the box can be assembled and done!</p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/mini2.jpg" width="300px" height="350px"> </td>
+	<td> <img src="images/mini3.jpg" width="300px" height="350px" > </td>
+</tr>
+
+
+
+
+
+
+
+
+
+</table>
+
+
+			<br>
+		</div>
+		<div id="footer">
+			Copyright &copy; Shaza Jannah 2020
+			</div>
+		</div>
+	</body>
+</html>

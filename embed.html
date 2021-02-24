@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<title>EP1000 Digital Fabrication & Prototyping</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	</body>
+	<div id="container">
+		<div id="header">
+			<h1>Embedded Programming</h1>
+		</div>
+		<div id="content">
+			<div id="nav">
+				<h3>Navigation</h3>
+				<table>
+					<tr>
+						<td>
+				<ul>
+					<li><a href="index.html">Home</a><li>
+					<li><a href="aboutme.html=">About</a><li>
+					<li><a href="safety.html">Safety</a></li>
+					<li><a href="prototyping.html">Prototyping</a></li>
+					<li><a href="webdev.html">Web Development</a></li>
+					<li><a href="verscont.html">Version Control/My Site</a></li>
+					<li><a href="compaid.html">Computer Aided Design</a></li>
+					<li><a href="3dprint.html">3D Printing</a></li>
+					<li><a href="compcont.html">Computer Controlled Cutting</a></li>
+					<li><a href="solder.html">Soldering & Breadboard Prototyping</a></li>
+					<li><a class="selected href">Embedded Programming</a></li>
+					<li><a href="projectpage.html">Project Page</a></li>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<div id="main">
+			
+				<h2>Arduino and Input/Output</h2>
+			</div>
+
+
+
+<table>
+<tr>
+<td colspan=3><h3> Toggle Push Button Input</h3>
+	<p> For this part, we were tasked to create a circuit which allows control for 2 LEDs using a push button. There were a series of sub-tasks to accomplish mainly: </p>
+
+		
+			<p> Simple LED control </p>
+		<ol type = "1">		
+			<li> initially, LEDs are all in the OFF state.</li>
+			<li> pressing the switch, turns on only the RED LED. </li> 
+			<li> pressing the switch again, turns on only the GREEN LED </li> 
+			<li> pressing the switch again, turns on only the WHITE LED </li> 
+			<li> pressing the switch again, turns on all LEDs </li> 
+			<li> pressing the switch again, turns off all LEDs returning to the first state. </li> 
+		</ol> </li>
+
+
+<p>I created a circuit using Arduino first before implementing it into my physical circuit. I also generated a code that will aid in the different steps of pressing the push button. The parts needed were: </p>
+
+<ol type = "1">		
+			<li> Arduino </li>
+			<li> Breadboard </li> 
+			<li> Wires </li> 
+			<li> LED x3 (Red, Green, White) </li> 
+			<li> 220 ohm resistor x3 </li> 
+			<li> 10k resistor x1</li> 
+		</ol> </li>
+
+
+<table>
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/ard1.jpg" width="350px" height="250px"> </td>
+	<td> <img src="images/code.jpg" width="350px" height="400px"> </td>
+
+</tr>
+
+
+
+</table>
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> I then proceed to create the physical circuit following the one i created in TinkerCAD. Here i made some minor changes to the layout, but not obstructing its main purpose. You may change around the circuit as you please, though be careful when you are unsure as it could short circuit. </p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/ard2.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/ard3.jpg" width="300px" height="200px" > </td>
+</tr>
+
+<br>
+<br>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr> <br>
+<td colspan=3><h3>Potentiometer Input</h3>
+	<p> Next up is the circuit using a potentiometer to control the intensity of the light. I similarly did the circuit on TinkerCAD first and did the circuit physically on my breadboard.  </p> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/poten(1).jpg" width="300px" height="300px"> </td>
+	<td> <img src="images/poten.jpg" width="300px" height="300px" > </td>
+	<td> <img src="images/code1.jpg" width="300px" height="300px" > </td>
+</tr>
+
+
+<tr> <br>
+<td colspan=3><h3>Output (LDR)</h3>
+	<p> An example of an output circuit is an LDR circuit. An LDR circuit depends on the light exposed to the Photo Resistor. The Photo Resistor would sense the availability of light exposed to it and if there is no light, the LED in the circuit would light up. When there is light, the LED in the circuit would not light up </p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/ard4.jpg" width="300px" height="300px"> </td>
+	<td> <img src="images/cir1.jpg" width="300px" height="300px" > </td>
+	<td> <img src="images/cir2.jpg" width="300px" height="300px" > </td>
+</tr>
+
+
+</table>
+
+
+			<br>
+		</div>
+		<div id="footer">
+			Copyright &copy; Shaza Jannah 2020
+			</div>
+		</div>
+	</body>
+</html>

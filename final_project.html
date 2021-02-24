@@ -1,0 +1,360 @@
+<html>
+	<head>
+		<title>EP1000 Digital Fabrication & Prototyping</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	</body>
+	<div id="container">
+		<div id="header">
+			<h1>Final Project</h1>
+		</div>
+		<div id="content">
+			<div id="nav">
+				<h3>Navigation</h3>
+				<table>
+					<tr>
+						<td>
+				<ul>
+					<li><a href="index.html">Home</a><li>
+					<li><a href="aboutme.html=">About</a><li>
+					<li><a href="safety.html">Safety</a></li>
+					<li><a href="prototyping.html">Prototyping</a></li>
+					<li><a href="webdev.html">Web Development</a></li>
+					<li><a href="verscont.html">Version Control/My Site</a></li>
+					<li><a href="compaid.html">Computer Aided Design</a></li>
+					<li><a href="selected href">3D Printing</a></li>
+					<li><a href="compcont.html">Computer Controlled Cutting</a></li>
+					<li><a href="solder.html">Soldering & Breadboard Prototyping</a></li>
+					<li><a href="embed.html">Embedded Programming</a></li>
+					<li><a href="output.html">Output/Input Devices</a></li>
+					<li><a class="selected href">Final Project</a></li>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<div id="main">
+			
+				<h2>Puzzle Box</h2>
+			</div>
+<br>
+<br>
+
+<table>
+<tr>
+<td colspan=3>
+	<p> For this module project, I intend to build a puzzle box that can be used for gifting purposes, versatile for any occassion. It is a simple yet thoughtful product for those who likes mystery puzzles. </p> 
+
+	<p>I obtained the idea from a youtube video called <a href="https://www.youtube.com/watch?v=Srw9gXDa24g&t=126s&ab_channel=bigchewypretzels" target="_blank"> "How I proposed: fairytale story with puzzles and secret at end" </a> showcasing a proposal puzzle book, that has 5 pages with mechanisms for the receiver to work and solve. Though I wanted to replicate a similar one, it was not possible due to deadlines, thus i simplified the idea into a puzzle box instead, holding 1 puzzle page at hand. With the replacement of the remaining 4 pages with a bigger, hollow box, i would be able to store the electrical components and a gift, which would not be possible if i had followed the initial plan. I also created a rough sketch of how my product should be and should have. My presentation slide is as so: <a href="https://user-images.githubusercontent.com/73816557/108632039-dbbeb100-74a7-11eb-9dd9-80da47084568.png" target="_blank"> My presentation </a></p>
+
+<table>
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/di.jpg" width="300px" height="300px"> </td>
+</tr>
+
+</table>
+
+
+
+
+
+	<p> PARTS for project, all 3mm in thickness(Starting from base to top, to other components):
+		<ol type = "1">
+					<li>Box bottom/Puzzle bottom x 2 (these have the same dimensions) </li>
+					<li>Box bottom sides (front & back) x 2 + Alternate pieces (left & right) x 2 </li>
+					<li>Middle panel x 1 </li>
+					<li>Side supports x 6 </li>
+					<li>Puzzle sides (front & back) x 2 + Alternate pieces (left & right) x2 </li>
+					<li>Puzzle top (with design) x 1</li>
+					<li>Rotary Pieces: Big x 1, Medium x 1, Small x 1</li>
+					<li>Knobs x 4</li>
+					<li>Lock part x 2</li>
+					<li>Hinge x 1</li>
+    			  </ol>
+			</p>
+
+	<p> The Autocad file and coding for the circuit is here for your reference:
+		<ol type = "1">
+					<li> <a href="images/SHAZA_v4.f3d" download>Download here for my AUTOCAD work for planning/construction</a> </li>
+					<li> <a href="images/sketch1/sketch1.INO" download>Click here for my circuit code for ARDUINO</a> </li>
+					<li> <a href="images/SFINAL.dxf" download>Click here for my DXF file for laser cutting in LIBRECAD</a> </li>
+					<li> <a href="images/Book1.xlsx" download>Download here for my Bill of Material for the components</a> </li>
+    			  </ol>
+			</p>
+
+
+
+
+
+			<h3> Creating the box/parts using Autodesk Fusion 360:</h3>
+
+
+
+				<p> Create a component and name it as bottom for box bottom (1). (For every part to be created, select "New Component". Ensure that the whole base design is selected and not just one part when creating the following parts.) Once done, extrude the piece at 3mm. Press enter and the bottom piece is done! </p>
+					<p> Now, to create the following parts, select the entire project (the one named as the file name on the top left side NOT the part we have just created). Once selected, create "New component". This will indicate the next part to be made. Rename every part to the respective side or object of the project. This way, you wouldn't be confused. Create the next part, either left or right and input the above dimensions. This can be the left side. Once done, repeat the extrusion. To save time from creating the right side, create a midplane. This is done by: Contruct > Midplane > (select the left part face and the bottom right (side) face. Once the plane is created, we may go to Create > Mirror > (select component), Object:(select the left component),Mirror Plane(the plane we have just generated). The right side then will be generated as a component. Do the same for the Front side for the Back side. Right = Left, and Front = Back.</p>
+				</p>
+
+			</ul>
+</align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/bottomsize.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/sidesize(1).jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/sidesize(2).jpg" width="300px" height="200px" > </td> 
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/bottomextrude.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/sideextrude(2).jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/sideextrude(1).jpg" width="300px" height="200px" > </td> 
+</tr>
+
+
+<tr>
+<td colspan=1> <br> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3><p> Combine the parts to create a box with no lid. Create the middle panel as per the dimensions. Afterwards, create the side supports and the lifting support. Combine these parts. The supports have 2 pieces attached for the bottom portion of the middle panel. The other side of the middle panel is left empty for the usb wire. Once combined, they will consist of: the bottom panel, side panels, middle panel and supports.</p> </align> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/midpanel.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/side1.jpg" width="200px" height="200px" > </td>
+	<td> <img src="images/fullbottom.jpg" width="300px" height="200px" > </td> 
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/midpanel2.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/side2.jpg" width="300px" height="200px" > </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3><p> The next part would be to start the bottom panel of the puzzle box. Follow the dimensions as per below and follow the same steps as the previously made box. The puzzle bottom panel dimensions are the same as the previous bottom panel. Then, create the top puzzle box piece using the dimensions as below. Now we have the full bottom box and the top puzzle box done. We then create the rotary pieces. </p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/f1.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/l1.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/top1.jpg" width="200px" height="200px" > </td> 
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/f12.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/l12.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/top2.jpg" width="200px" height="200px" > </td> 
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/small.jpg" width="250px" height="200px"> </td>
+	<td> <img src="images/med.jpg" width="200px" height="200px" > </td>
+	<td> <img src="images/big.jpg" width="200px" height="200px" > </td> 
+</tr>
+
+<tr>
+	<td> <img src="images/small2.jpg" width="200px" height="200px"> </td>
+	<td> <img src="images/med2.jpg" width="200px" height="200px" > </td>
+	<td> <img src="images/bigg.jpg" width="200px" height="200px" > </td> 
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> We then create the knobs. We create a sketch on the bottom puzzle piece, following the location of the holes from the rotary pieces. Once the circles are sketched, we extrude them up until the top flat surface of the puzzle box. Then we create another sketch using the centre of the previously sketched circle to create the upper piece. Extrude this part too. Now with all the parts combined, they should look like the picture below.</align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/hole.jpg" width="250px" height="200px"> </td>
+	<td> <img src="images/hole3.jpg" width="250px" height="200px" > </td>
+	<td> <img src="images/boxknob.jpg" width="300px" height="300px" > </td>
+</tr>
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/hole2.jpg" width="200px" height="200px"> </td>
+	<td> <img src="images/hole4.jpg" width="200px" height="200px" > </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <p> Now we move on forward to the lock parts, hinge and we can proceed to the electronics part. For the lock, using the bottom front piece as reference as where to start, create the piece using below dimensions. The lock is separated into two parts: the lock area and the design area. Create the design one first and the lock area second. For the lock area, create the hole: 7mm, depth of 3mm, and fillet the sides 10mm. These are to be combined. After, create a mid plane using the top part of the lock area and the bottom of the bottom puzzle panel as reference. Mirror the object by selecting the lock as a whole and choosing the midplane we have just created. I then used an online file from <a href="https://cults3d.com/en/3d-model/tool/hinge" target="_blank"> Cults3d </a> for the hinge. The hinge, lock part and knobs was done using 3d printing. I simply exported the objects as an stl file and brought it over to my Ultimaker Cura app for 3d printing.</p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/lock1.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/lock3.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/lock6.jpg" width="300px" height="300px"> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/lock2.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/lock4.jpg" width="300px" height="200px" > </td>
+	<td> <img src="images/lock7.jpg" width="300px" height="300px"> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/full.jpg" width="300px" height="300px"> </td>
+	<td> <img src="images/hinge.jpg" width="300px" height="200px"> </td>
+	<td> <img src="images/lockx2.jpg" width="300px" height="200px" > </td>
+</tr>
+
+
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <p> I then proceeded to laser cut my box pieces by exporting the sketches of each part as dxf and combining them together in LIBRECAD, and then proceeded to assemble them with the 3d pieces. Here are some pictures I took. </p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/box1.jpg" width="200px" height="200px"> </td>
+	<td> <img src="images/as11.jpg" width="200px" height="200px"> </td>
+	<td> <img src="images/as1.jpg" width="200px" height="200px"> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/as2.jpg" width="200px" height="200px"> </td>
+	<td> <img src="images/as3.jpg" width="200px" height="200px"> </td>
+	<td> <img src="images/as4.jpg" width="200px" height="200px"> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <p> Last but not least, I generated a reverse LDR circuit so that when the box is closed, the led will not light up, and when the box is opened, the led will light up. This is how the circuit is set up:</p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/cir1.jpg" width="300px" height="300px"> </td>
+	<td> <img src="images/cir2.jpg" width="300px" height="300px"> </td>
+</tr>
+
+<br>
+
+<tr>
+<td colspan=3> <p> And the end product is this! My video for how the box works is here: <a href="https://youtu.be/JCADkGgNIGI" target="_blank"> project 2021. shaza </a></p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+	<td> <img src="images/end1.jpg" width="300px" height="300px"> </td>
+	<td> <img src="images/end2.jpg" width="300px" height="300px"> </td>
+</tr>
+
+
+<tr>
+<td colspan=3> 
+<br>
+<p> What was completed: I have managed to complete the lasercutting for the box itself, the 3d printing for the hinge, lock and knobs, and even the circuit itself which i struggled with initially. The box tabs managed to fit one another though there were some gaps, the 3d printing took a second time before it worked out as i forgot to create a support, and the circuit managed to work after a few trials. </p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> 
+<p> What needs to be done further: I wished that i had planned my parts properly as i realised at a certain point, i do have excess material. However, in the end, i managed to use the excess material for some parts like the rotary system which i forgot to create supports for. I also realised that i should check on the required materials beforehand and plan my box according to the resources provided. At last minute, i decided to laser cut some numbers for the box. However, due to time constraint and last minute planning, the numbers turned out fragile and unusable, therefore I had to write down the numbers using a marker in the end. However, despite the lack of careful planning, i managed to complete my project in time! </p> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+<tr>
+<td colspan=3> <br> </align> </td>
+</tr>
+
+</table>
+
+
+			<br>
+		</div>
+		<div id="footer">
+			Copyright &copy; Shaza Jannah 2020
+			</div>
+		</div>
+	</body>
+</html>
